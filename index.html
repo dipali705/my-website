@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookVerse - Discover Your Next Read</title>
+    <title>GLibrary- Discover Your Next Read</title>
     <style>
         * {
             margin: 0;
@@ -14,6 +14,8 @@
 
         body {
             background-color:#2c4a52  ;
+            width: 100%;
+            overflow-x: hidden;
         }
 
         .navbar {
@@ -23,6 +25,7 @@
             justify-content: space-between;
             align-items: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 100%;
         }
 
         .logo {
@@ -58,6 +61,7 @@
             text-align: center;
             color: white;
             padding: 2rem;
+            width: 100%;
         }
 
         .hero h1 {
@@ -158,6 +162,7 @@
         .categories {
             padding: 4rem 2rem;
             text-align: center;
+            width: 100%;
         }
 
         .categories h2 {
@@ -171,6 +176,7 @@
             gap: 2rem;
             max-width: 1200px;
             margin: 0 auto;
+            width: 100%;
         }
 
         .category-card {
@@ -202,7 +208,65 @@
             text-align: center;
             padding: 2rem;
             margin-top: 4rem;
+            width: 100%;
         }
+
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+
+            .hero {
+                height: auto;
+                min-height: 400px;
+                padding: 2rem 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+                padding: 0 1rem;
+            }
+
+            .search-container {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 0 1rem;
+            }
+
+            .search-button {
+                padding: 1rem 2rem;
+            }
+
+            .categories {
+                padding: 2rem 1rem;
+            }
+
+            .category-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .category-card {
+                padding: 1.5rem;
+            }
+
+            footer {
+                padding: 2rem 1rem;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -760,4 +824,6 @@ document.getElementById('searchInput').addEventListener('input', function(e) {
 
 </body>
 </html>
+
+
 
